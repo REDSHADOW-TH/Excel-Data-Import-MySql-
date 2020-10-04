@@ -2,7 +2,7 @@
 -- MIT Licence https://opensource.org/licenses/MIT
 
 
--- import systen std funtion from c# code.
+-- import system std funtion from c# code.
 _importData = clr.LuaShare.ImportData
 importData = _importData()
 _allImportData = nil
