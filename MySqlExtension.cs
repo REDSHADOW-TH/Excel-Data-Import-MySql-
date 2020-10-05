@@ -22,7 +22,7 @@ namespace Excel_Data_Import__MySql_.MySql
             {
                 connection.Open();
                 char singleQuote = (char)39;
-                string insertCommand = commandData.Command.Replace("'", @$"\{singleQuote}");
+                string insertCommand = commandData.Command;
                 MySqlCommand cmd = new MySqlCommand(insertCommand, connection);
                 cmd.CommandTimeout = 280000;
                 cmd.ExecuteNonQuery();
