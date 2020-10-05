@@ -149,6 +149,10 @@ namespace Excel_Data_Import__MySql_.Excel
                     // get value from excel.
                     dynamic value = _sheetTarget.Cells[row, column].Value != null ? _sheetTarget.Cells[row, column].Value.ToString() : "";
 
+                    // if have single quote replcae to \';
+                    char singleQuote = (char)39;
+                    value.Replace("'", @$"\{singleQuote}");
+
                     if (firstValue)
                     {
                         result += $"'{value}'";

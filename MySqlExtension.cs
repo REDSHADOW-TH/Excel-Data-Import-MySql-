@@ -21,9 +21,9 @@ namespace Excel_Data_Import__MySql_.MySql
             try
             {
                 connection.Open();
-                char singleQuote = (char)34;
+                char singleQuote = (char)39;
                 string insertCommand = commandData.Command.Replace("'", @$"\{singleQuote}");
-                MySqlCommand cmd = new MySqlCommand(, connection);
+                MySqlCommand cmd = new MySqlCommand(insertCommand, connection);
                 cmd.CommandTimeout = 280000;
                 cmd.ExecuteNonQuery();
                 connection.Close();
