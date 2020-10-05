@@ -88,7 +88,6 @@ D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcore
 D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
 D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-D:\Git\Excel-Data-Import-MySql-\obj\Debug\netcoreapp3.1\Excel Data Import (MySql).csprojAssemblyReference.cache
 D:\Git\Excel-Data-Import-MySql-\obj\Debug\netcoreapp3.1\Excel Data Import (MySql).AssemblyInfoInputs.cache
 D:\Git\Excel-Data-Import-MySql-\obj\Debug\netcoreapp3.1\Excel Data Import (MySql).AssemblyInfo.cs
 D:\Git\Excel-Data-Import-MySql-\obj\Debug\netcoreapp3.1\Excel Data Import (MySql).csproj.CoreCompileInputs.cache

@@ -1,6 +1,6 @@
 config = {
 
-    connectionString = 'Server=localhost;Uid=root;Pwd=;Database=test_import',
-    scriptPath = 'C:\\Users\\nilph\\source\\repos\\Excel Data Import (MySql)\\Excel Data Import (MySql)\\bin\\Debug\\netcoreapp3.1\\main.lua'
+    connectionString = 'Server=192.168.1.32;Uid=excel;Pwd=p@$$w0rd;Database=ufs_db106;sslMode=none',
+    scriptPath = 'D:\\Git\\Excel-Data-Import-MySql-\\bin\\Debug\\netcoreapp3.1\\main.lua'
 
 }
