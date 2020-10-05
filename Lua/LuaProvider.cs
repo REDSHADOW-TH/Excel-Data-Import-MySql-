@@ -21,12 +21,21 @@ namespace Excel_Data_Import__MySql_.Lua
 
         public LuaProvider()
         {
-            if (!String.IsNullOrEmpty(DataStore._config.ScriptPath))
+            if (File.Exists(DataStore._config.ScriptPath))
             {
-                scriptPath = DataStore._config.ScriptPath;
+                if (!String.IsNullOrEmpty(DataStore._config.ScriptPath))
+                {
+                    scriptPath = DataStore._config.ScriptPath;
+                }
+                else
+                {
+                    Console.WriteLine("Config is not valid scriptPath is not null or empty");
+                    Console.ReadKey();
+                    Environment.Exit(1);
+                }
             } else
             {
-                Console.WriteLine("Config is not valid scriptPath is not null or empty");
+                Console.WriteLine($"Can not find path {DataStore._config.ScriptPath}");
                 Console.ReadKey();
                 Environment.Exit(1);
             }

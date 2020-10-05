@@ -47,3 +47,52 @@ C:\Users\nilph\source\repos\Excel Data Import (MySql)\Excel Data Import (MySql)\
 C:\Users\nilph\source\repos\Excel Data Import (MySql)\Excel Data Import (MySql)\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
 C:\Users\nilph\source\repos\Excel Data Import (MySql)\Excel Data Import (MySql)\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\nilph\source\repos\Excel Data Import (MySql)\Excel Data Import (MySql)\obj\Debug\netcoreapp3.1\Excel Data Import (MySql).csproj.CoreCompileInputs.cache
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Excel Data Import (MySql).exe
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Excel Data Import (MySql).deps.json
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Excel Data Import (MySql).runtimeconfig.json
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Excel Data Import (MySql).runtimeconfig.dev.json
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Excel Data Import (MySql).dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Excel Data Import (MySql).pdb
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\EPPlus.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\MySql.Data.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Neo.Lua.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\de\Neo.Lua.resources.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Git\Excel-Data-Import-MySql-\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Git\Excel-Data-Import-MySql-\obj\Debug\netcoreapp3.1\Excel Data Import (MySql).csprojAssemblyReference.cache
+D:\Git\Excel-Data-Import-MySql-\obj\Debug\netcoreapp3.1\Excel Data Import (MySql).AssemblyInfoInputs.cache
+D:\Git\Excel-Data-Import-MySql-\obj\Debug\netcoreapp3.1\Excel Data Import (MySql).AssemblyInfo.cs
+D:\Git\Excel-Data-Import-MySql-\obj\Debug\netcoreapp3.1\Excel Data Import (MySql).csproj.CoreCompileInputs.cache
+D:\Git\Excel-Data-Import-MySql-\obj\Debug\netcoreapp3.1\Excel Data Import (MySql).csproj.CopyComplete
+D:\Git\Excel-Data-Import-MySql-\obj\Debug\netcoreapp3.1\Excel Data Import (MySql).dll
+D:\Git\Excel-Data-Import-MySql-\obj\Debug\netcoreapp3.1\Excel Data Import (MySql).pdb
+D:\Git\Excel-Data-Import-MySql-\obj\Debug\netcoreapp3.1\Excel Data Import (MySql).genruntimeconfig.cache

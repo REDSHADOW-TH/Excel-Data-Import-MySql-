@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nilph\\source\\repos\\Excel Data Import (MySql)\\Excel Data Import (MySql)\\Excel Data Import (MySql).csproj": {}
+    "D:\\Git\\Excel-Data-Import-MySql-\\Excel Data Import (MySql).csproj": {}
   },
   "projects": {
-    "C:\\Users\\nilph\\source\\repos\\Excel Data Import (MySql)\\Excel Data Import (MySql)\\Excel Data Import (MySql).csproj": {
+    "D:\\Git\\Excel-Data-Import-MySql-\\Excel Data Import (MySql).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nilph\\source\\repos\\Excel Data Import (MySql)\\Excel Data Import (MySql)\\Excel Data Import (MySql).csproj",
+        "projectUniqueName": "D:\\Git\\Excel-Data-Import-MySql-\\Excel Data Import (MySql).csproj",
         "projectName": "Excel Data Import (MySql)",
-        "projectPath": "C:\\Users\\nilph\\source\\repos\\Excel Data Import (MySql)\\Excel Data Import (MySql)\\Excel Data Import (MySql).csproj",
-        "packagesPath": "C:\\Users\\nilph\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nilph\\source\\repos\\Excel Data Import (MySql)\\Excel Data Import (MySql)\\obj\\",
+        "projectPath": "D:\\Git\\Excel-Data-Import-MySql-\\Excel Data Import (MySql).csproj",
+        "packagesPath": "C:\\Users\\PhumiphatJaroenyonwa\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\Excel-Data-Import-MySql-\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\nilph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PhumiphatJaroenyonwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -70,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
