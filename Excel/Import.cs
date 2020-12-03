@@ -40,21 +40,28 @@ namespace Excel_Data_Import__MySql_.Excel
                 if (_sheetTarget == null)
                 {
                     Console.WriteLine($"Can not find sheet {excelConfig.Sheet} please check config and exel file.");
-                    Console.ReadKey();
                     Environment.Exit(1);
                 }
-            } else
+            }
+            else
             {
                 Console.WriteLine($"Can not find path {excelConfig.Path}");
-                Console.ReadKey();
                 Environment.Exit(1);
             }
-         
+
             GetFeildMapping();
         }
 
         public bool StartImport()
         {
+            IMySqlCommand cmd = new IMySqlCommand()
+            {
+                Command = $"truncate table {tableTarget}"
+            };
+            if (cmd.Execute())
+            {
+                Console.WriteLine("Truncate {} success");
+            }
             List<string> allFeildsData = importData.Select(item => item.Feild).Distinct().ToList();
             string allFeilds = MakeField();
             string prefixInsert = $"insert into {tableTarget} values ";
@@ -69,15 +76,18 @@ namespace Excel_Data_Import__MySql_.Excel
             {
                 int endRow = _sheetTarget.Dimension.End.Row;
 
+                endRow -= excelConfig.EndRowIgnore;
+
                 // start loop from excel config (startRow)
-                for(int row=(int)excelConfig.StartRow;row<=endRow;row++)
+                for (int row = (int)excelConfig.StartRow; row <= endRow; row++)
                 {
 
                     if (firstValue)
                     {
                         allValues.AppendLine(MakeValue(row));
                         firstValue = false;
-                    } else
+                    }
+                    else
                     {
                         allValues.AppendLine("," + MakeValue(row));
                     }
@@ -89,16 +99,17 @@ namespace Excel_Data_Import__MySql_.Excel
                 if (mysqlExec.Execute())
                 {
                     Console.WriteLine("Import success.");
-                    Console.ReadKey();
                     Environment.Exit(0);
-                } else
+                }
+                else
                 {
                     Console.WriteLine($"Import fail exception: {mysqlExec.GetException()}");
                     Console.ReadKey();
                     Environment.Exit(1);
                 }
                 return true;
-            } catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 exception = ex.ToString();
                 return false;
@@ -110,13 +121,14 @@ namespace Excel_Data_Import__MySql_.Excel
                 bool firstValue = true;
                 if (allFeildsData.Count > 0)
                 {
-                    foreach(string item in allFeildsData)
+                    foreach (string item in allFeildsData)
                     {
                         if (firstValue)
                         {
                             result += item;
                             firstValue = false;
-                        } else
+                        }
+                        else
                         {
                             result += "," + item;
                         }
@@ -130,7 +142,7 @@ namespace Excel_Data_Import__MySql_.Excel
                 string result = "(";
 
                 bool firstValue = true;
-                foreach (string item in allFeildsData) 
+                foreach (string item in allFeildsData)
                 {
                     // get column name by field.
                     string key = importData.Where(w => w.Feild == item).Select(s => s.ColumnName).FirstOrDefault().ToString();
@@ -139,8 +151,9 @@ namespace Excel_Data_Import__MySql_.Excel
                     try
                     {
                         // get column index from mmapping.
-                         column = feildMapping[key];
-                    } catch
+                        column = feildMapping[key];
+                    }
+                    catch
                     {
                         Console.WriteLine($"Not found column {key} please check import data and try again.");
                         Console.ReadKey();
@@ -159,13 +172,14 @@ namespace Excel_Data_Import__MySql_.Excel
                     {
                         result += $"'{value}'";
                         firstValue = false;
-                    } else
+                    }
+                    else
                     {
                         result += $",'{value}'";
                     }
                 }
 
-                    result += ")";
+                result += ")";
                 return result;
             }
         }
@@ -176,11 +190,18 @@ namespace Excel_Data_Import__MySql_.Excel
 
             int maxCol = _sheetTarget.Dimension.End.Column;
 
-            for(int index = 1; index <= maxCol; index++)
+            for (int index = 1; index <= maxCol; index++)
             {
                 // key = value in cell, value = index (column index).
-                string key = _sheetTarget.Cells[1, index].Value.ToString();
-                feildMapping.Add(key, index);
+                try
+                {
+                    string key = _sheetTarget.Cells[1, index].Value.ToString();
+                    feildMapping.Add(key, index);
+                }
+                catch
+                {
+                    continue;
+                }
             }
         }
     }

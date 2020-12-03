@@ -87,8 +87,8 @@ namespace Excel_Data_Import__MySql_.Lua
             {
                 dynamic config = env.system.excelConfig;
                 IExcelConfig data = new IExcelConfig();
-                bool pathCheck, sheetCheck, startRowCheck;
-                pathCheck = sheetCheck = startRowCheck = false;
+                bool pathCheck, sheetCheck, startRowCheck, EndRowIgnoreCheck;
+                pathCheck = sheetCheck = startRowCheck = EndRowIgnoreCheck = false;
                 foreach (KeyValuePair<dynamic, dynamic> item in config)
                 {
                     dynamic key = item.Key;
@@ -108,6 +108,16 @@ namespace Excel_Data_Import__MySql_.Lua
                         data.StartRow = (int)value;
                         startRowCheck = true;
                     }
+                    else if (key == "endRowIgnore" && value != null)
+                    {
+                        data.EndRowIgnore = (int)value;
+                        EndRowIgnoreCheck = true;
+                    }
+                }
+
+                if (!EndRowIgnoreCheck)
+                {
+                    data.EndRowIgnore = 0;   
                 }
 
                 if (!pathCheck || !sheetCheck || !startRowCheck)

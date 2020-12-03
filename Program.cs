@@ -5,7 +5,9 @@ using System;
 using Excel_Data_Import__MySql_.Data;
 using Excel_Data_Import__MySql_.Lua;
 using Excel_Data_Import__MySql_.Excel;
-
+using Excel_Data_Import__MySql_.MySql;
+using Google.Protobuf;
+using Renci.SshNet.Security.Cryptography;
 
 namespace Excel_Data_Import__MySql_
 {
@@ -13,10 +15,13 @@ namespace Excel_Data_Import__MySql_
     {
         static void Main(string[] args)
         {
+            
+
             DataStore._config = Config.GetConfig();
             LuaProvider luaProvider = new LuaProvider();
 
             IExcelConfig excelConfig = DataStore._excelConfig;
+
             // check excel config.
             if (!String.IsNullOrEmpty(excelConfig.Path) || !String.IsNullOrEmpty(excelConfig.Sheet) || excelConfig.StartRow != null)
             {
@@ -43,8 +48,6 @@ namespace Excel_Data_Import__MySql_
                 Console.ReadKey();
                 Environment.Exit(1);
             }
-
-            Console.ReadKey();
         }
     }
 }

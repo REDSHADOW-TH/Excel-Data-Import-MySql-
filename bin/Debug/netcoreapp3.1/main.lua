@@ -1,8 +1,9 @@
-filePath = 'D:\\Git\\Excel-Data-Import-MySql-\\bin\\Debug\\netcoreapp3.1\\File\\raw.xlsx'
+filePath = 'D:\\Git\\Excel-Data-Import-MySql-\\bin\\Debug\\netcoreapp3.1\\File\\raw_upro.xlsx'
 
 excelConfig = {
-    path = filePath, sheet = 'SAP - Raw data', startRow = 2
+    path = filePath, sheet = 'Sheet1', startRow = 2, endRowIgnore = 1
 }
+
 
 data = {
     importData:MakeImportData('docdate','Document Date'),
@@ -37,7 +38,7 @@ data = {
     importData:MakeImportData('loc_sal_regions4','Loc.Sal. Regions 4'),
     importData:MakeImportData('loc_sal_workforce3_name','Loc.Sal. Workforce 3 Name'),
     importData:MakeImportData('loc_sal_workforce2','Loc.Sal. Workforce 2'),
-    importData:MakeImportData('loc_sal_workforce3_names','Loc.Sal. Workforce 3 Names'),
+    importData:MakeImportData('loc_sal_workforce3_names','Loc.Sal. Workforce 3 Name'),
     importData:MakeImportData('loc_sal_workforce3','Loc.Sal. Workforce 3'),
     importData:MakeImportData('loc_sal_workforce4','Loc.Sal. Workforce 4'),
     importData:MakeImportData('bill_to_party_name','Bill-to party Name'),
@@ -49,7 +50,7 @@ data = {
     importData:MakeImportData('total_ppr','Total PPR'),
     importData:MakeImportData('list_price_per_sales_uom','List Price Per Sales UOM'),
     importData:MakeImportData('list_price','List Price')
-
 }
 
-system:import(excelConfig, data, 'daily_order_raw')
+
+system:import(excelConfig, data, 'daily_order_upro_raw')

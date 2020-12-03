@@ -12,5 +12,6 @@ namespace Excel_Data_Import__MySql_.Data
         public string Path;
         public string Sheet;
         public int StartRow;
+        public int EndRowIgnore;
     }
 }
